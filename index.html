@@ -1,50 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./src/output.css">
-</head>
-<body>
-  <header>
-    <nav class=" w-[80%] m-auto flex justify-between items-center mt-24">
-      <img class=" w-12 h-12 md:w-16 md:h-16" src="./images/logo.svg" alt="logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="font-['Inter']">
+    <header class="container">
+      <nav class="flex justify-between items-center mt-24 mb-[120px]">
+        <img
+          class="w-12 h-12 md:w-16 md:h-16"
+          src="./images/logo.svg"
+          alt="logo"
+        />
 
-      <div class="hidden md:block">
-        <ul class="flex justify-between gap-10">
-          <li><a class="link" href="#">О нас</a></li>
-          <li><a class="link" href="#">Услуги</a></li>
-          <li><a class="link" href="#">Как купить</a></li>
-          <li><a class="link" href="#">Преимущества</a></li>
-          <li><a class="link" href="#">Отзывы</a></li>
-          <li><a class="link" href="#">Контакты</a></li>
-        </ul>
-      </div>
-
-
-      <div class="flex justify-end md:justify-between gap-10 items-center "> 
-
-        <div class="flex justify-between gap-3">
-          <img class="w-[30px] h-[30px]" src="./images/telegram.svg" alt="social Icon">
-          <img class="w-[30px] h-[30px]" src="./images/whatsup.svg" alt="social Icon">
-          <img class="w-[30px] h-[30px]" src="./images/youtube.svg" alt="social Icon">
+        <div class="hidden md:block">
+          <ul class="flex justify-between gap-10">
+            <li><a class="link" href="#">О нас</a></li>
+            <li><a class="link" href="#">Услуги</a></li>
+            <li><a class="link" href="#">Как купить</a></li>
+            <li><a class="link" href="#">Преимущества</a></li>
+            <li><a class="link" href="#">Отзывы</a></li>
+            <li><a class="link" href="#">Контакты</a></li>
+          </ul>
         </div>
 
-        <div  class="hidden md:block">
-          <p>+7 (927) 997-12-42</p>
-          <p>+7 (927) 997-12-42</p>
+        <div class="flex gap-10 items-center">
+          <!-- social media icons -->
+          <div class="flex justify-between gap-3">
+            <img
+              class="w-[30px] h-[30px]"
+              src="./images/telegram.svg"
+              alt="social Icon"
+            />
+            <img
+              class="w-[30px] h-[30px]"
+              src="./images/whatsup.svg"
+              alt="social Icon"
+            />
+            <img
+              class="w-[30px] h-[30px]"
+              src="./images/youtube.svg"
+              alt="social Icon"
+            />
+          </div>
+
+          <div class="hidden md:block">
+            <p>+7 (927) 997-12-42</p>
+            <p>+7 (927) 997-12-42</p>
+          </div>
+
+          <img class="block md:hidden" src="./images/menu.svg" alt="menu" />
         </div>
+      </nav>
 
+      <!-- hero -->
+      <div class="flex flex-col md:flex-row mb-11">
+        <div class="w-full md:w-[50%]">
+          <h1
+            class="text-center md:text-left text-[40px] md:text-[50px] font-black leading-14 mb-5"
+          >
+            Купите автомобиль дешевле на 60%*
+          </h1>
+          <img
+            class="block md:hidden w-full md:w-[50%]"
+            src="./images/Image_hero_car.svg"
+            alt="Image_hero_car"
+          />
+          <p class="text-xl leading-8 mb-11 text-center md:text-left">
+            Привезем автомобиль под ключ со всеми документами. Подбор автомобиля
+            под любой запрос БЕСПЛАТНО
+          </p>
+          <a
+            class="btn block md:inline-block md:px-14 w-[100%] md:w-[60%]"
+            href="#"
+            >Оставить заявку</a
+          >
+        </div>
+        <img
+          class="hidden md:block w-[50%]"
+          src="./images/Image_hero_car.svg"
+          alt="Image_hero_car"
+        />
       </div>
+    </header>
+    <main>
+      <!-- cards -->
+      <section class="bg-[#F4F6F8] pb-28">
+        <div
+          class="container my-32 flex flex-col justify-center items-center gap-7"
+        >
+          <!-- div center -->
+          <div class="w-[80%] m-auto flex flex-col gap-6">
+            <h2 class="text-[35px] font-black leading-14 text-center">
+              Поможем вам выгодно купить и привезти автомобиль в любую точку
+              России
+            </h2>
+            <p class="text-xl leading-8 mb-11 text-center">
+              Предлагаем Вам купить автомобиль дешевле и лучше, но за тот же
+              бюджет
+            </p>
+          </div>
+          <a
+            class="btn hidden md:inline-block md:px-14 w-[100%] md:w-[30%]"
+            href="#"
+            >Оставить заявку</a
+          >
 
-      <img class="block md:hidden" src="./images/menu.svg" alt="menu">
-    </nav>
+          <!-- cardsni cardlari -->
+          <div class="flex flex-col md:flex-row gap-8">
+            <div
+              class="bg-[#fff] rounded-[20px] pt-6 pl-8 w-[400px] h-[264px] relative mb-5"
+            >
+              <h3 class="text-4xl font-bold">С пробегом</h3>
+              <p class="text-[16px] font-medium mt-7 w-3xs opacity-80">
+                Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на
+                Авито и Авто.ру
+              </p>
+              <img
+                class="absolute bottom-[18px] right-[30px]"
+                src="./images/pult.svg"
+                alt="pult of car"
+              />
+            </div>
+
+            <div
+              class="bg-[#fff] rounded-[20px] pt-6 pl-8 w-[400px] h-[264px] relative">
+              <h3 class="text-4xl font-bold">С пробегом</h3>
+              <p class="text-[16px] font-medium mt-7 w-3xs opacity-80">
+                Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на
+                Авито и Авто.ру
+              </p>
+              <img
+                class="absolute bottom-[18px] right-[30px]"
+                src="./images/red_car.svg"
+                alt="pult of car"
+              />
+            </div>
+
+            <div
+              class="bg-[#fff] rounded-[20px] pt-6 pl-8 w-[400px] h-[264px] relative"
+            >
+              <h3 class="text-4xl font-bold">С пробегом</h3>
+              <p class="text-[16px] font-medium mt-7 w-3xs opacity-80">
+                Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на
+                Авито и Авто.ру
+              </p>
+              <img
+                class="absolute bottom-[18px] right-[30px]"
+                src="./images/coins.svg"
+                alt="pult of car"
+              />
+            </div>
+          </div>
+
+          <a class="btn block md:hidden md:px-14 w-[100%] md:w-[30%]" href="#"
+            >Оставить заявку</a
+          >
+        </div>
+      </section>
+
+      <!-- checkbox -->
+      <section class=" w-full md:h-[656px] flex flex-col md:flex-row justify-center md:justify-between">
+        <img class="w-[100%] md:w-[50%] md:h-full" src="./images/Container.jpg" alt="img container" />
+        <div class="w-[100%] md:w-[50%] pl-24 pt-2 flex flex-col gap-2">
+          <h2 class="text-[35px] font-black leading-14">О нас</h2>
+          <p class="text-xl leading-8 mb-5 w-[90%] md:w-[70%]">
+            Мы автосалон и официальный партнер крупнейших мировых
+            авто-аукционов: IAA (Insurance Auto Auction), Copart, Manheim.
+          </p>
+          <img src="./images/Horizontal container.svg" alt="" />
+          <img src="./images/Horizontal container (1).svg" alt="" />
+          <img src="./images/Horizontal container (2).svg" alt="" />
+          <p class="text-xl leading-8 mb-11 w-[90%] md:w-[70%] border-2 rounded-[10px] border-[#FA002C26] px-[12px] py-[20px]">
+            Мы берем на себя полное сопровождение сделки до передачи автомобиля
+            в руки клиенту.
+          </p>
+          <a class="btn block  md:px-14 w-[90%] md:w-[50%]" href="#"
+            >Оставить заявку</a>
+        </div>
+      </section>
 
 
-  </header>
-  <main></main>
-  <footer></footer>
-  
-</body>
+      <!-- kakiye auto privozim -->
+
+      <section class="bg-[#F4F6F8] pb-28 pt-24">
+        <div
+          class="container my-32 flex flex-col  items-center gap-7"
+        >
+          <!-- div center -->
+          <div class="w-[80%] m-auto flex flex-col gap-6">
+            <h2 class="text-[35px] font-black leading-14">Какие авто привозим?</h2>
+            <p class="text-xl leading-8 mb-11">Привозим авто не старше 7 лет на момент растаможки.</p>
+          </div>
+
+          <!-- cards -->
+          <div class="flex flex-col md:flex-row gap-8">
+            <div
+              class="bg-[#fff] rounded-[20px] px-5 py-6 "
+              >
+              <img
+                class=" bottom-[18px] right-[30px]"
+                src="./images/car.png"
+                alt="pult of car"
+              />
+              <h3 class="text-2xl font-bold mt-6 mb-4">Toyota RAV4 2022</h3>
+              <div class=" flex items-center">
+                <p class=" text-[16px] opacity-50">Пробег</p>
+                <p class="border-b-dashed w-[10px]"></p>
+                <!-- <img src="./images/Vector 8.png" alt="dashed"> -->
+                <span class="text-[20px]">5 700 км</span>
+              </div>
+            </div>
+
+          </div>
+
+          <a class="btn block md:hidden md:px-14 w-[100%] md:w-[30%]" href="#"
+            >Оставить заявку</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

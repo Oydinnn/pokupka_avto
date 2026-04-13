@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @theme{
-  --color-osnovnoy-tekst: #686868;
   --color-aksentnyy: #2f70d9;
   --color-cvet-cta:#d95845;
   --color-footer: #282828;
@@ -8,6 +7,20 @@
 
 }
 
+.container{
+  @apply w-[80%] m-auto
+}
+
 .link{
   @apply text-[16px] tracking-wider
 }
+
+/* .title{
+  @apply 
+} */
+
+.btn{
+  @apply bg-[#F50E30] rounded-xl text-white text-center py-4
+}
+
+
